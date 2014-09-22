@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="cl.flu0.passcard.MainActivity" >
+
+    <TextView
+        android:id="@+id/txvCardContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/label_placeholder" />
+
+    <TextView
+        android:id="@+id/txlCardNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txvCardContent"
+        android:text="@string/label_card_number"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/etxCardNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txlCardNumber"
+        android:layout_toLeftOf="@+id/btnRndNumber"
+        android:hint="@string/hint_card_number"
+        android:inputType="textNoSuggestions"
+        android:maxLength="@integer/param_cardnumber_max_length" >
+
+    </EditText>
+
+    <Button
+        android:id="@+id/btnRndNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etxCardNumber"
+        android:layout_alignBottom="@+id/etxCardNumber"
+        android:layout_alignRight="@+id/txlCardNumber"
+        android:text="@string/btn_rnd_number" />
+
+    <TextView
+        android:id="@+id/txvInclude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btnRndNumber"
+        android:text="@string/label_include"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <CheckBox
+        android:id="@+id/cbxIncNumbers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/cbxIncSymbols"
+        android:text="@string/label_inc_numbers" />
+
+    <CheckBox
+        android:id="@+id/cbxIncSymbols"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txvInclude"
+        android:text="@string/label_inc_symbols" />
+
+</RelativeLayout>

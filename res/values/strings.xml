@@ -1,5 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
     <string name="app_name">PassCard</string>
+    <string name="title_activity_main">PassCard</string>
+    <string name="action_settings">Settings</string>
+    <string name="label_placeholder">[Placeholder]</string>
+    <string name="label_card_number">PasswordCard number</string>
+    <string name="hint_card_number">Hex digits only</string>
+    <string name="btn_rnd_number">Random</string>
+    <string name="label_include">Include</string>
+    <string name="label_inc_symbols">Symbols/special characters</string>
+    <string name="label_inc_numbers">A numbers-only area</string>
+    <string name="action_export">Export…</string>
 
 </resources>
