@@ -52,7 +52,7 @@ public class Tool {
         }
     }
 
-    private static long parseUnsignedHexLong(String str) {
+    public static long parseUnsignedHexLong(String str) {
         str = str.trim();
         if (str.length() > 16) {
             throw new IllegalArgumentException();
