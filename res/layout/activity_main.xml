@@ -13,6 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:text="@string/label_placeholder" />
 
@@ -21,17 +22,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_below="@+id/txvCardContent"
         android:text="@string/label_card_number"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <EditText
-        android:id="@+id/etxCardNumber"
+        android:id="@+id/etxCardId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_below="@+id/txlCardNumber"
         android:layout_toLeftOf="@+id/btnRndNumber"
+        android:layout_toStartOf="@+id/btnRndNumber"
         android:hint="@string/hint_card_number"
         android:inputType="textNoSuggestions"
         android:maxLength="@integer/param_cardnumber_max_length" >
@@ -42,9 +46,10 @@
         android:id="@+id/btnRndNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/etxCardNumber"
-        android:layout_alignBottom="@+id/etxCardNumber"
+        android:layout_alignBaseline="@+id/etxCardId"
+        android:layout_alignBottom="@+id/etxCardId"
         android:layout_alignRight="@+id/txlCardNumber"
+        android:layout_alignEnd="@+id/txlCardNumber"
         android:text="@string/btn_rnd_number" />
 
     <TextView
@@ -52,6 +57,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_below="@+id/btnRndNumber"
         android:text="@string/label_include"
         android:textAppearance="?android:attr/textAppearanceMedium" />
@@ -61,6 +67,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_below="@+id/cbxIncSymbols"
         android:text="@string/label_inc_numbers" />
 
@@ -69,6 +76,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_below="@+id/txvInclude"
         android:text="@string/label_inc_symbols" />
 
