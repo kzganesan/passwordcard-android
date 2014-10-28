@@ -6,6 +6,7 @@ import java.util.Random;
 import android.support.v7.app.ActionBarActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -43,7 +44,7 @@ public class MainActivity extends ActionBarActivity {
 	private boolean incSymbols = false;
 	
 	private TextView txvCardContent;
-	
+	private Typeface freeMono;
 	private EditText etxCardId;
 	private Button btnRndId;
 	private CheckBox cbxIncNumbers;
@@ -54,12 +55,15 @@ public class MainActivity extends ActionBarActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		
-		getViews();
+		setUp();
 	}
 
-	private void getViews() {
-		if (txvCardContent == null)
+	private void setUp() {
+		if (txvCardContent == null) {
 			txvCardContent = (TextView) findViewById(R.id.txvCardContent);
+			freeMono = Typeface.createFromAsset(getAssets(),"fonts/FreeMono.ttf");
+			txvCardContent.setTypeface(freeMono);
+		}
 		
 		if (etxCardId == null) {
 			etxCardId = (EditText) findViewById(R.id.etxCardId);

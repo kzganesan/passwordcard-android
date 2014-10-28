@@ -21,7 +21,8 @@
 	        android:layout_alignParentLeft="true"
 	        android:layout_alignParentStart="true"
 	        android:layout_alignParentTop="true"
-	        android:text="@string/label_placeholder" />
+	        android:text="@string/label_placeholder"
+	        android:textSize="16sp" />
 	
 	    <TextView
 	        android:id="@+id/txlCardNumber"
