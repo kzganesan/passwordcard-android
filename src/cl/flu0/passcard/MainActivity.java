@@ -1,5 +1,6 @@
 package cl.flu0.passcard;
 
+import java.util.Locale;
 import java.util.Random;
 
 import android.support.v7.app.ActionBarActivity;
@@ -113,7 +114,7 @@ public class MainActivity extends ActionBarActivity {
 	}
 	
 	private void genRndPassCardId() {
-		etxCardId.setText(getRandomHexString(16));
+		etxCardId.setText(getRandomHexString(16).toUpperCase(Locale.US));
 	}
 	
 	// From http://stackoverflow.com/questions/14622622 
