@@ -41,8 +41,9 @@
 	        android:layout_below="@+id/txlCardNumber"
 	        android:layout_toLeftOf="@+id/btnRndId"
 	        android:layout_toStartOf="@+id/btnRndId"
+	        android:digits="0123456789ABCDEF"
 	        android:hint="@string/hint_card_number"
-	        android:inputType="textNoSuggestions"
+	        android:inputType="textCapCharacters|textVisiblePassword"
 	        android:maxLength="@integer/param_cardnumber_max_length" >
 	
 	    </EditText>

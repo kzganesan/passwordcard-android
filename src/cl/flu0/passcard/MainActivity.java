@@ -28,20 +28,6 @@ public class MainActivity extends ActionBarActivity {
 		
 		@Override
 		public void afterTextChanged(Editable s) {
-			// From http://www.41post.com/5108/programming/android-hexadecimal-color-input-using-an-edittext
-			//Store the text on a String  
-            String text = s.toString();  
-
-            //Get the length of the String  
-            int length = s.length();  
-
-            /*If the String length is bigger than zero and it's not 
-            composed only by the following characters: A to F and/or 0 to 9 */  
-            if(!text.matches("[a-fA-F0-9]+") && length > 0) {  
-                //Delete the last character  
-                s.delete(length - 1, length);
-            }
-            
             genPassCard();
 		}
 		
